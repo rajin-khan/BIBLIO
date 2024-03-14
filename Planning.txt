@@ -1,0 +1,31 @@
+Possible entities:
+
+1. Users
+
+2. Admin
+
+3. Authors
+
+4. Books
+
+5. Stock
+
+6. Borrowed
+
+7. Requested
+
+Attributes for entities:
+
+1. Users: - name (varchar)
+          - email (varchar)
+          - username (varchar) *PRIMARY KEY*
+          - password (varchar)
+          - DOB (date)
+
+2. Admin: - name (varchar)
+          - email (varchar)
+          - admin_ID (int) *PRIMARY KEY*
+          - password (varchar)
+          - shift (varchar)
+
+3. Books: - 
