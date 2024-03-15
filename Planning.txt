@@ -28,4 +28,23 @@ Attributes for entities:
           - password (varchar)
           - shift (varchar)
 
-3. Books: - 
+3. Author: - author_name (varchar)
+           - author_ID (int) *PRIMARY KEY*
+
+4. Books: - ISBN (int) *PRIMARY KEY*
+          - book_name (varchar)
+          - language (varchar)
+          - genre (varchar)
+          - author_ID *FOREIGN KEY*
+          - rating (double)
+          - date_added (date)
+
+5. Stock: - ISBN *FOREIGN KEY* *PRIMARY KEY*
+          - book_name *FOREIGN KEY*
+          - copies (int) *PARTIAL KEY*
+
+6. Borrowed: - username *FOREIGN KEY* *PRIMARY KEY*
+             - ISBN *FOREIGN KEY* *PRIMARY KEY*
+             - date_borrowed (date)
+
+7. Requested: - 
