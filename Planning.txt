@@ -51,3 +51,5 @@ Attributes for entities:
               - req_ISBN (int) *PRIMARY KEY*
               - req_authorname (varchar)
               - author_exists (bool) [to check if the author already exists in the library databse, if so, this info will not be added. if so, a new author_ID will be generated.]
+
+Relationships will be established in a separate file using drawio. Chen's notation shall be used, instead of Crow's foot notation.
