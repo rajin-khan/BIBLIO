@@ -47,4 +47,7 @@ Attributes for entities:
              - ISBN *FOREIGN KEY* *PRIMARY KEY*
              - date_borrowed (date)
 
-7. Requested: - 
+7. Requested: - req_bookname (varchar)
+              - req_ISBN (int) *PRIMARY KEY*
+              - req_authorname (varchar)
+              - author_exists (bool) [to check if the author already exists in the library databse, if so, this info will not be added. if so, a new author_ID will be generated.]
