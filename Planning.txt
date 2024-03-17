@@ -8,7 +8,7 @@ Possible entities:
 
 4. Books
 
-5. Stock
+5. Available
 
 6. Borrowed
 
@@ -39,9 +39,9 @@ Attributes for entities:
           - rating (double)
           - date_added (date)
 
-5. Stock: - ISBN *FOREIGN KEY* *PRIMARY KEY*
-          - book_name *FOREIGN KEY*
-          - copies (int) *PARTIAL KEY*
+5. Available: - ISBN *FOREIGN KEY* *PRIMARY KEY*
+              - book_name *FOREIGN KEY*
+              - copies (int) *PARTIAL KEY*
 
 6. Borrowed: - username *FOREIGN KEY* *PRIMARY KEY*
              - ISBN *FOREIGN KEY* *PRIMARY KEY*
