@@ -1,6 +1,6 @@
 Possible entities:
 
-1. Users
+1. Customers
 
 2. Admin
 
@@ -16,16 +16,19 @@ Possible entities:
 
 Attributes for entities:
 
-1. Users: - name (varchar)
-          - email (varchar)
-          - username (varchar) *PRIMARY KEY*
-          - password (varchar)
-          - DOB (date)
+1. Customers: - cust_name (varchar)
+              - cust_email (varchar)
+              - cust_phone (int)
+              - username (varchar) *PRIMARY KEY*
+              - cust_pass (varchar)
+              - cust_DOB (date)
 
-2. Admin: - name (varchar)
-          - email (varchar)
+2. Admin: - admin_name (varchar)
+          - admin_email (varchar)
+          - admin_phone (int)
           - admin_ID (int) *PRIMARY KEY*
-          - password (varchar)
+          - admin_pass (varchar)
+          - admin_DOB (date)
           - shift (varchar)
 
 3. Author: - author_name (varchar)
@@ -41,11 +44,12 @@ Attributes for entities:
 
 5. Available: - ISBN *FOREIGN KEY* *PRIMARY KEY*
               - book_name *FOREIGN KEY*
-              - copies (int) *PARTIAL KEY*
+              - av_copies (int) *PARTIAL KEY*
 
 6. Borrowed: - username *FOREIGN KEY* *PRIMARY KEY*
              - ISBN *FOREIGN KEY* *PRIMARY KEY*
              - date_borrowed (date)
+             - bor_copies (int) *PARTIAL KEY*
 
 7. Requested: - req_bookname (varchar)
               - req_ISBN (int) *PRIMARY KEY*
