@@ -97,3 +97,4 @@ Integrity constraints:
 
 Relationships will be shown in a separate ER diagram using drawio. An image of the ER diagram and its latest state will always be available on the repository.
 Chen's notation shall be used, instead of Crow's foot notation.
+
