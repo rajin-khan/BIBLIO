@@ -69,15 +69,15 @@ Relationships:
                       - copies_added (int)
                       - copies_removed (int)
 
-    - Admin * approves * Requested (unsure)  (MANY-ONE)
+    - Admin * oversees * Requested (MANY-ONE)
 
-    approves table: - admin_ID (referencing Admin) *PRIMARY KEY* 
+    oversees table: - admin_ID (referencing Admin) *PRIMARY KEY* 
                     - req_ID (referencing Requested) *PRIMARY KEY*
                     - approved (boolean)
                     - approval_date (date)
 
 
-    - Authors * have * Books
+    - Authors * have * Books ()
 
     have table: - author_ID (referencing Authors) 
                 - ISBN (referencing Books)
