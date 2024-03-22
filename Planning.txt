@@ -77,7 +77,7 @@ Relationships:
                     - approval_date (date)
 
 
-    - Authors * have * Books ()
+    - Authors * have * Books (MANY-MANY)
 
     have table: - author_ID (referencing Authors) 
                 - ISBN (referencing Books)
