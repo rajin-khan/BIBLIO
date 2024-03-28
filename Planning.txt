@@ -94,7 +94,8 @@ Integrity constraints:
 7. If the "author_exists" attribute is True, then a new "author_ID" need not be generated, nor the name added to the Authors entity table.
 8. If the "req_ISBN" (from Requested) matches any instance of the "ISBN" attribute (from Books), then a book request cannot be generated; the request will not be added to the Requested entity table. 
 
-
 Relationships will be shown in a separate ER diagram using drawio. An image of the ER diagram and its latest state will always be available on the repository.
 Chen's notation shall be used, instead of Crow's foot notation.
 
+The ER diagram will be converted to tables soon (in the Tables.txt file).
+The FINAL information about the decided entities and attributes will be given there.
