@@ -46,7 +46,7 @@ Attributes for entities:
               - req_authorname (varchar)
               - author_exists (bool) [to check if the author already exists in the library databse, if so, this info will not be added. if so, a new author_ID will be generated.]
 
-Relationships:
+Relationships: (kind of redundant, this is just initial planning, refer to ERD for more accurate representation of relationships)
 
 
     - Customers * see * Books (MANY-MANY)
@@ -77,7 +77,7 @@ Relationships:
                     - approval_date (date)
 
 
-    - Authors * have * Books (MANY-MANY)
+    - Authors * write * Books (MANY-MANY)
 
     have table: - author_ID (referencing Authors) 
                 - ISBN (referencing Books)
@@ -89,10 +89,12 @@ Integrity constraints:
 2. If a Customer borrows a book, the copies attribute must be decremented by 1, and its information, along with the Customer's, added to the "have_borrowed" relationship table.
 3. Each Customer can borrow only one copy of a book.
 4. An Admin cannot remove a book if the number of copies = 0 .
-5. The number of copies of a Book can never be < 0 .
-6. If the "author_exists" attribute is False (from Requested entity table), then a new "author_ID" must be generated incrementally and added to the Authors entity table, with the name.
-7. If the "author_exists" attribute is True, then a new "author_ID" need not be generated, nor the name added to the Authors entity table.
-8. If the "req_ISBN" (from Requested) matches any instance of the "ISBN" attribute (from Books), then a book request cannot be generated; the request will not be added to the Requested entity table. 
+5. The stock of a Book can never be < 0 .
+6. copies_available attribute is calculated via the formula: (copies_available = stock + copies_added - copies_removed)
+7. The moment certain copies are borrowed, the stock attribute is recalculated via the formula: (stock = stock - copies_borrowed)
+8. If the "author_exists" attribute is False (from Requested entity table), then a new "author_ID" must be generated incrementally and added to the Authors entity table, with the name.
+9. If the "author_exists" attribute is True, then a new "author_ID" need not be generated, nor the name added to the Authors entity table.
+10. If the "req_ISBN" (from Requested) matches any instance of the "ISBN" attribute (from Books), then a book request cannot be generated; the request will not be added to the Requested entity table. 
 
 Relationships will be shown in a separate ER diagram using drawio. An image of the ER diagram and its latest state will always be available on the repository.
 Chen's notation shall be used, instead of Crow's foot notation.
