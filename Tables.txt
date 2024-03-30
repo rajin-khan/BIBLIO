@@ -1,3 +1,6 @@
+All the tables, as they will be put in the database, are written out here:
+
+
 Customers table:
 
 username (PK)   cust_name    cust_email    cust_pass    cust_DOB
@@ -51,3 +54,6 @@ ISBN (PK, FK)    author_ID (PK, FK)
 Requested table:
 
 req_ID (PK)    req_ISBN    req_bookname    req_authorname    author_exists    admin_ID (FK)    approved    approval_date
+
+
+This database will be setup using a MySQL datbase and managed using phpMyAdmin.
