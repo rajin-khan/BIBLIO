@@ -1,0 +1,53 @@
+Customers table:
+
+username (PK)   cust_name    cust_email    cust_pass    cust_DOB
+
+
+CPhone table (for multivalued attribute):
+
+username (PK, FK)    cust_phone
+
+
+see table:
+
+username (PK, FK)    ISBN (PK, FK)    copies_available
+
+
+have_borrowed table:
+
+username (PK, FK)    ISBN (PK, FK)    copies_borrowed
+
+
+Admin table:
+
+admin_ID (PK)    admin_name    admin_email    admin_pass    admin_DOB   shift
+
+
+APhone table (for multivalued attribute):
+
+admin_ID (PK, FK)    admin_phone
+
+
+Books table:
+
+ISBN (PK)    book_name    language    rating     stock    date_added    admin_ID (FK)    copies_added    copies_removed
+
+
+BGenre table (for multivalued attribute):
+
+ISBN (PK, FK)    genre
+
+
+Authors table:
+
+author_ID (PK)    author_name
+
+
+write table:
+
+ISBN (PK, FK)    author_ID (PK, FK)
+
+
+Requested table:
+
+req_ID (PK)    req_ISBN    req_bookname    req_authorname    author_exists    admin_ID (FK)    approved    approval_date
