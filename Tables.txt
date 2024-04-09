@@ -57,3 +57,4 @@ req_ID (PK)    req_ISBN    req_bookname    req_authorname    author_exists    ad
 
 
 This database will be setup using a MySQL datbase and managed using phpMyAdmin.
+Work on the frontend part of the website will begin soon.
