@@ -87,7 +87,7 @@ Integrity constraints:
 
 1. Books will only be visible in the "sees" relationship table if the number of copies > 0 .
 2. If a Customer borrows a book, the copies attribute must be decremented by 1, and its information, along with the Customer's, added to the "have_borrowed" relationship table.
-3. Each Customer can borrow only one copy of a book.
+3. Each Customer can borrow multiple copies of a book.
 4. An Admin cannot remove a book if the number of copies = 0 .
 5. The stock of a Book can never be < 0 .
 6. copies_available attribute is calculated via the formula: (copies_available = stock + copies_added - copies_removed)
