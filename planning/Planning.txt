@@ -1,0 +1,105 @@
+Entities:
+
+1. Customers
+
+2. Admin
+
+3. Authors
+
+4. Books
+
+5. Requested
+
+Attributes for entities:
+
+1. Customers: - cust_name (varchar)
+              - cust_email (varchar)
+              - cust_phone (int)
+              - username (varchar) *PRIMARY KEY*
+              - cust_pass (varchar)
+              - cust_DOB (date)
+
+2. Admin: - admin_name (varchar)
+          - admin_email (varchar)
+          - admin_phone (int)
+          - admin_ID (int) *PRIMARY KEY*
+          - admin_pass (varchar)
+          - admin_DOB (date)
+          - shift (varchar)
+
+3. Authors: - author_name (varchar)
+            - author_ID (int) *PRIMARY KEY*
+
+4. Books: - ISBN (int) *PRIMARY KEY*
+          - book_name (varchar)
+          - language (varchar)
+          - genre (varchar)
+          - author_name *FOREIGN KEY*
+          - author_ID *FOREIGN KEY*
+          - rating (double)
+          - copies (int)
+          - date_added (date)
+
+5. Requested: - req_ID (int) *PRIMARY KEY*
+              - req_bookname (varchar)
+              - req_ISBN (int)
+              - req_authorname (varchar)
+              - author_exists (bool) [to check if the author already exists in the library databse, if so, this info will not be added. if so, a new author_ID will be generated.]
+
+Relationships: (kind of redundant, this is just initial planning, refer to ERD for more accurate representation of relationships)
+
+
+    - Customers * see * Books (MANY-MANY)
+    
+    see relationship table: - ISBN (referencing Books) *PRIMARY KEY*
+                            - book_name (referencing Books)
+                            - author_name (referencing Books)
+                            - copies (referencing Books) *PRIMARY KEY*
+
+    - Customers * have_borrowed * Books (MANY-MANY)
+
+    have_borrowed table: - username (referencing Customers) *PRIMARY KEY*
+                         - ISBN (referencing Books) *PRIMARY KEY*
+
+
+    - Admin * supervises * Books (MANY-ONE)
+
+    supervises table: - admin_ID (referencing Admin) *PRIMARY KEY*
+                      - ISBN (referencing Books) *PRIMARY KEY*
+                      - copies_added (int)
+                      - copies_removed (int)
+
+    - Admin * oversees * Requested (MANY-ONE)
+
+    oversees table: - admin_ID (referencing Admin) *PRIMARY KEY* 
+                    - req_ID (referencing Requested) *PRIMARY KEY*
+                    - approved (boolean)
+                    - approval_date (date)
+
+
+    - Authors * write * Books (MANY-MANY)
+
+    have table: - author_ID (referencing Authors) 
+                - ISBN (referencing Books)
+                
+    
+Integrity constraints:
+
+1. Books will only be visible in the "sees" relationship table if the number of copies > 0 .
+2. If a Customer borrows a book, the copies attribute must be decremented by 1, and its information, along with the Customer's, added to the "have_borrowed" relationship table.
+3. Each Customer can borrow multiple copies of a book.
+4. An Admin cannot remove a book if the number of copies = 0 .
+5. The stock of a Book can never be < 0 .
+6. copies_available attribute is calculated via the formula: (copies_available = stock + copies_added - copies_removed)
+7. The moment certain copies are borrowed, the stock attribute is recalculated via the formula: (stock = stock - copies_borrowed)
+8. If the "author_exists" attribute is False (from Requested entity table), then a new "author_ID" must be generated incrementally and added to the Authors entity table, with the name.
+9. If the "author_exists" attribute is True, then a new "author_ID" need not be generated, nor the name added to the Authors entity table.
+10. If the "req_ISBN" (from Requested) matches any instance of the "ISBN" attribute (from Books), then a book request cannot be generated; the request will not be added to the Requested entity table. 
+
+Relationships will be shown in a separate ER diagram using drawio. An image of the ER diagram and its latest state will always be available on the repository.
+Chen's notation shall be used, instead of Crow's foot notation.
+
+The ER diagram will be converted to tables soon (in the Tables.txt file).
+The FINAL information about the decided entities and attributes will be given there.
+
+Additionally, a pdf with the updated concept of how the website is supposed to look will be provided at all times.
