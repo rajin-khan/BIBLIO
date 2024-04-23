@@ -102,4 +102,4 @@ Chen's notation shall be used, instead of Crow's foot notation.
 The ER diagram will be converted to tables soon (in the Tables.txt file).
 The FINAL information about the decided entities and attributes will be given there.
 
-Additionally, a pdf with the updated concept of how the website is supposed to look will be provided at all times.
+Additionally, a pdf with the updated concept, and images of how the website is supposed to look will be provided at all times.
