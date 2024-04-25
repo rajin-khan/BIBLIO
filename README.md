@@ -42,8 +42,8 @@ BIBLIO is a Library Management System designed to facilitate the management of b
 
 ## Collaboration and Updates
 
-We plan to share the workload equally and learn Full Stack development by working on this project together. Updates and progress can be tracked via this repository. ER diagrams, additional planning and concepts are provided in the "planning" folder.
-You can follow the frontend learning progress via this repository: ([Adib's Frontend Dev Repo](https://github.com/rajin-khan/web-dev-self))
+- We plan to share the workload equally and learn Full Stack development by working on this project together. Updates and progress can be tracked via this repository. ER diagrams, additional planning and concepts are provided in the "planning" folder.
+- You can follow the frontend learning progress via this repository: ([Adib's Frontend Dev Repo](https://github.com/rajin-khan/web-dev-self))
 
 ## Contributors
 
