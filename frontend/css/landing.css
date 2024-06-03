@@ -1,0 +1,54 @@
+body {
+
+    margin: 0px;
+    position: relative
+}
+
+.background {
+
+    width: 100%;
+    height: 100%;
+    z-index: -99999;
+}
+
+.link {
+
+    font-family: 'Roseritta', sans-serif;
+    font-size: 120%;
+    color: white;     
+    position: absolute;
+    left: 41.1vw;
+    bottom: 15.5vw;
+}
+
+button {
+
+    border-radius: 25px;
+    z-index: 99;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 5px;
+}
+
+.user {
+
+    font-family: 'Roseritta', sans-serif;
+    font-size: 200%;
+    background-color: black;
+    color: white;
+    position:absolute;
+    left:45.2%;
+    bottom: 26vw;
+}
+
+.admin {
+
+    font-family: 'Roseritta', sans-serif;
+    background-color: white;
+    font-size: 185%;
+    color: black;
+    position:absolute;
+    position:absolute;
+    left:44.7%;
+    bottom: 20vw;
+}
