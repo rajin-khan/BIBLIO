@@ -33,7 +33,7 @@ admin_ID (PK, FK)    admin_phone
 
 Books table:
 
-ISBN (PK)    book_name    language    rating     stock    date_added    admin_ID (FK)    copies_added    copies_removed
+ISBN (PK)    book_name    lang    rating     stock    date_added    admin_ID (FK)    copies_added    copies_removed
 
 
 BGenre table (for multivalued attribute):
