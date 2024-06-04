@@ -38,7 +38,7 @@ body {
     border-radius: 15px;
 
     left: 39.3vw;
-    bottom: 63vh;
+    bottom: 56.5vh;
 
     text-align: center;
 }
@@ -52,7 +52,7 @@ body {
     border-radius: 15px;
 
     left: 39.3vw;
-    bottom: 48vh;
+    bottom: 44vh;
 
     text-align: center;
 }
@@ -71,8 +71,9 @@ body {
 
     padding-left: 30px;
     padding-right: 30px;
-    padding-top: 5px;
+    padding-top: 10px;
+    padding-bottom: 5px;
 
     left: 45.5vw;
-    top: 84vh;
+    bottom: 34vh;
 }
