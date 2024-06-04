@@ -31,7 +31,7 @@ button {
     z-index: 99;
     padding-left: 30px;
     padding-right: 30px;
-    padding-top: 5px;
+    padding-top: 9px;
 }
 
 .user {
@@ -39,6 +39,7 @@ button {
     font-family: 'Roseritta', sans-serif;
     font-size: 200%;
     background-color: black;
+    border: solid 1px white;
     color: white;
     position:absolute;
     left:45.2%;
@@ -48,8 +49,9 @@ button {
 .admin {
 
     font-family: 'Roseritta', sans-serif;
-    background-color: white;
     font-size: 185%;
+    background-color: white;
+    border: solid 1px black;
     color: black;
     position:absolute;
     position:absolute;

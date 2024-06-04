@@ -16,6 +16,19 @@ body {
     z-index: -99999;
 }
 
+#backButton {
+
+    position: absolute;
+
+    font-family: 'Roseritta', sans-serif;
+    font-size: 120%;
+    color: white;
+    text-decoration: underline;
+
+    top: 12vh;
+    left: 5vw;
+
+}
 #username {
 
     position:absolute;
@@ -49,7 +62,9 @@ body {
     font-size: 150%;
 
     background-color: black;
+    border: solid 1px white;
     border-radius: 25px;
+
     padding-left: 30px;
     padding-right: 30px;
     padding-top: 5px;
