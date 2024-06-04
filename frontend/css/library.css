@@ -1,0 +1,96 @@
+* {
+
+    margin: 0px;
+}
+
+body {
+
+    position: relative
+}
+
+.background {
+
+    width: 100%;
+    height: 100%;
+
+    z-index: -99999;
+}
+
+.sortMenu {
+
+    position: absolute;
+
+    font-family: 'Roseritta', sans-serif;
+    color: white;
+
+    left: 15vw;
+    top:10.5vh;
+
+    z-index: 99;
+
+    cursor: pointer;
+}
+
+.sortMenu a{
+
+    display: block;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+.sortMenu .content {
+
+        display: none;
+
+    position: absolute;
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 5px;
+    min-width: 7rem;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.sortMenu:hover .content {
+
+    
+    display: block;
+}
+
+#requestLink {
+
+    position: absolute;
+
+    font-family: 'Roseritta', sans-serif;
+    color: white;
+
+    right:15vw;
+    top: 10.5vh;
+}
+
+.bookspace {
+
+    position: absolute;
+
+    border: 2px solid white;
+
+    width: auto;
+    height: auto;
+
+    left: 15vw;
+    right: 15vw;
+    top: 10vw;
+    bottom: 10vw;
+
+}
+
+#checkoutButton {
+
+    position: absolute;
+
+    width: 11rem;
+
+    right: 4vw;
+    bottom: 8.5vh;
+}
