@@ -1,6 +1,10 @@
-body {
+* {
 
     margin: 0px;
+}
+
+body {
+
     position: relative
 }
 
@@ -38,7 +42,7 @@ button {
     color: white;
     position:absolute;
     left:45.2%;
-    bottom: 26vw;
+    bottom: 25.7vw;
 }
 
 .admin {
