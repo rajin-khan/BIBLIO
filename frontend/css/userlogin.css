@@ -39,6 +39,8 @@ body {
 
     left: 39.3vw;
     bottom: 63vh;
+
+    text-align: center;
 }
 
 #password {
@@ -51,6 +53,8 @@ body {
 
     left: 39.3vw;
     bottom: 48vh;
+
+    text-align: center;
 }
 
 #loginButton {
