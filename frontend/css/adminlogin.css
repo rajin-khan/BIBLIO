@@ -1,0 +1,75 @@
+* {
+
+    margin: 0px;
+}
+
+body {
+
+    position: relative
+}
+
+.background {
+
+    width: 100%;
+    height: 100%;
+
+    z-index: -99999;
+}
+
+#backButton {
+
+    position: absolute;
+
+    font-family: 'Roseritta', sans-serif;
+    font-size: 120%;
+    color: white;
+    text-decoration: underline;
+
+    top: 12vh;
+    left: 5vw;
+
+}
+
+#username {
+
+    position:absolute;
+
+    width: 300px;
+    height: 30px;
+    border-radius: 15px;
+
+    left: 39.3vw;
+    bottom: 63vh;
+}
+
+#password {
+
+    position:absolute;
+
+    width: 300px;
+    height: 30px;
+    border-radius: 15px;
+
+    left: 39.3vw;
+    bottom: 48vh;
+}
+
+#loginButton {
+
+    position: absolute;
+
+    font-family: 'Roseritta', sans-serif;
+    color: black;
+    font-size: 150%;
+
+    background-color: white;
+    border: solid 1px black;
+    border-radius: 25px;
+
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 5px;
+
+    left: 45.5vw;
+    top: 84vh;
+}
