@@ -1,11 +1,12 @@
 * {
 
     margin: 0px;
+    margin-bottom: -5px;
 }
 
 body {
 
-    position: relative
+    position: relative;
 }
 
 .background {
