@@ -4,6 +4,10 @@
 
 BIBLIO is a Library Management System designed to facilitate the management of books in a library. It allows both Users (registered) and Admins (Librarians) to log in and perform various actions related to browsing, borrowing, and managing books.
 
+### Please keep in mind that this is a beginner Web-Dev project and is NOT RESPONSIVE due to the nature of focus of the project. It strives to manage a Library Database System. Thus:
+
+## THIS SITE IS BEST VIEWED ON A BROWSER LIKE CHROME, FULL-SCREEN, ON 100%.
+
 ## Features
 
 - **User Authentication**: Users and Admins can log in securely to access their respective functionalities.
