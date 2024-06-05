@@ -12,6 +12,7 @@
 
     <div class="background">
         <img class="background" src="/BIBLIO/frontend/webimages/available.png" alt="Background of library page">
+        <div id="overlay" class="overlay"></div>
     </div>
 
     <div class="menuBar" onclick="openNav()">
@@ -45,11 +46,13 @@
         function openNav() {
 
             document.getElementById("mySidenav").style.width = "400px";
+            document.getElementById("overlay").style.display = "block";
         }
           
         function closeNav() {
 
             document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("overlay").style.display = "none";
         }
 
     </script>
