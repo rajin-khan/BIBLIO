@@ -1,0 +1,154 @@
+* {
+
+    margin: 0px;
+    margin-bottom: -5px;
+}
+
+body {
+
+    position: relative
+}
+
+.background {
+
+    width: 100%;
+    height: 100%;
+    z-index: -99999;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    z-index: 99;
+}
+
+.menuBar {
+
+    position: absolute;
+
+    left: 8vw;
+    top: 6vw;
+    
+}
+
+.menuImage {
+
+    height:15px;
+    width: auto;
+}
+
+.sideMenu {
+
+    position: absolute;
+
+    height: 100vh;
+}
+
+.sidenav {
+
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    transition: 0.3s;
+}
+
+.sidenav .closebtn {
+
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 20px;
+    color: white;
+    margin-left: 50px;
+    z-index: 101;
+}
+
+button {
+
+    position: absolute;
+
+    border-radius: 25px;
+    z-index: 101;
+
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 9px;
+}
+
+
+.profileButton {
+
+    font-family: 'Roseritta', sans-serif;
+    background-color: black;
+    color: white;
+    font-size:2rem;
+
+    border: 1px solid white;
+
+    left: 8vw;
+    top: 50vh;
+}
+
+.libraryButton {
+
+    font-family: 'Roseritta', sans-serif;
+    color: black;
+    font-size:2rem;
+
+    border: 1px solid black;
+
+    left: 8vw;
+    top: 63vh;
+}
+
+.logoutButton {
+
+    font-family: 'Roseritta', sans-serif;
+    background-color: black;
+    color: white;
+    font-size:2rem;
+
+    border: 1px solid white;
+
+    left: 7.3vw;
+    top: 75vh;
+}
+
+#tokenText {
+
+    position: absolute;
+
+    font-family: 'Roseritta', sans-serif;
+    font-size: 500%;
+    color: white;
+
+    text-align: center;
+
+    left: 15vw;
+    right: 15vw;
+    top: 48.5vh;
+    bottom: 32vh;
+
+}
+
+#libraryLink {
+
+    position: absolute;
+
+    font-family: 'Roseritta', sans-serif;
+    font-size: 200%;
+    color: white;
+    text-decoration: underline;
+
+    left: 39.5vw;
+    bottom: 27vh;
+}
