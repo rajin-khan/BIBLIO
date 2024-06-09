@@ -31,8 +31,8 @@ body {
 
     position: absolute;
 
-    left: 7vw;
-    top: 15vh;
+    left: 9vw;
+    top: 13vh;
     
 }
 
@@ -149,4 +149,41 @@ button {
 
     left: 7vw;
     bottom: 10vh;
+}
+
+.morebutton {
+
+    border-radius: 50px;
+    z-index: 99;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 14px;
+}
+
+.update {
+
+    font-family: 'Roseritta', sans-serif;
+    font-size: 200%;
+    width: 21vw;
+    height: 9vh;
+    background-color: black;
+    border: solid 1px white;
+    color: white;
+    position:absolute;
+    left:13vw;
+    bottom: 9vh;
+}
+
+.add {
+
+    font-family: 'Roseritta', sans-serif;
+    font-size: 200%;
+    width: 18vw;
+    height: 9vh;
+    background-color: black;
+    border: solid 1px white;
+    color: white;
+    position:absolute;
+    left: 36vw;
+    bottom: 9vh;
 }
