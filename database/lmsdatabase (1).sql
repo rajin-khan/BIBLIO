@@ -1,7 +1,9 @@
 
+
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
 SET time_zone = "+00:00";
+
 
 
 
@@ -19,34 +21,34 @@ INSERT INTO `admins` (`id`, `name`, `email`, `password`, `mobile`) VALUES
 (1, 'admin', 'admin@gmail.com', 'admin@1234', 1148458757);
 
 
-
 CREATE TABLE `authors` (
   `author_id` int(11) NOT NULL,
   `author_name` varchar(250) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 
-
 INSERT INTO `authors` (`author_id`, `author_name`) VALUES
-(102, 'leo'),
-(103, 'Cap'),
-(104, 'humayon');
+(102, 'M D Guptaa'),
+(103, 'Chetan Bhagat'),
+(104, 'Munshi Prem Chand');
+
 
 
 CREATE TABLE `books` (
-  `book_id` int(11) NOT NULL,
   `book_name` varchar(250) NOT NULL,
+  `book_isbn` int(11) NOT NULL,
+  `author_name` varchar(250) NOT NULL,
   `author_id` int(11) NOT NULL,
   `cat_id` int(11) NOT NULL,
-  `book_no` int(11) NOT NULL,
+  `no_of_copies` int(11) NOT NULL,
   `book_price` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 
-
-INSERT INTO `books` (`book_id`, `book_name`, `author_id`, `cat_id`, `book_no`, `book_price`) VALUES
-(1, 'Software engineering', 101, 1, 4518, 270),
-(2, 'Data structure', 102, 2, 6541, 300);
+INSERT INTO `books` (`book_name`, `book_isbn`, `author_name`, `author_id`, `cat_id`, `no_of_copies`, `book_price`) VALUES
+('Devil inside', 1111, 'Dr Fredy', 101, 1, 5, 270),
+('Data structure', 1112, 'Prof M', 102, 2, 5, 300),
+('GIN', 1113, 'M Mathew', 103, 3, 90, 200);
 
 
 
@@ -54,7 +56,6 @@ CREATE TABLE `category` (
   `cat_id` int(11) NOT NULL,
   `cat_name` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
 
 
 INSERT INTO `category` (`cat_id`, `cat_name`) VALUES
@@ -78,24 +79,27 @@ CREATE TABLE `issued_books` (
 
 
 INSERT INTO `issued_books` (`s_no`, `book_no`, `book_name`, `book_author`, `student_id`, `status`, `issue_date`) VALUES
-(1, 6541, 'Data structure', 'Rocky', 4, 1, '0000-00-00 00:00:00');
+(1, 6541, 'Data structure', 'D S Gupta', 4, 1, '0000-00-00 00:00:00'),
+(18, 7845, 'half Girlfriend', 'Chetan Bhagat', 2, 1, '2020-04-22');
 
 
 
 CREATE TABLE `users` (
-  `id` int(11) NOT NULL,
   `name` varchar(50) NOT NULL,
   `email` varchar(100) NOT NULL,
-  `password` varchar(100) NOT NULL,
+  `DOB` date DEFAULT NULL,
   `mobile` int(10) NOT NULL,
-  `address` varchar(250) NOT NULL
+  `id` int(11) NOT NULL,
+  `password` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 
-INSERT INTO `users` (`id`, `name`, `email`, `password`, `mobile`, `address`) VALUES
-(4, 'reyna', 'reyna@gmail.com', 'reyna@1234', 2147, 'XYZ, vatara , dhaka'),
-(7, 'phoenix', 'phoe@gmail.com', 'phoe@123', 644, 'Bashundhara, kuril , london'),
-(8, 'rubi', 'rubi@gmail', 'sd2', 99989, 'UK');
+INSERT INTO `users` (`name`, `email`, `DOB`, `mobile`, `id`, `password`) VALUES
+('reyna', 'reyna@gmail.com', '1990-05-15', 3545464, 4, '2147'),
+('rubi', 'aurongojeblishad@gmail.com', '2024-06-25', 0, 13, 'dfdgfbcbfb'),
+('gfdhgfdf', 'dslsjfbh@gmail.com', '2024-06-26', 8923245, 4455, 'dsshfsgfs'),
+('hetmer', 'het@gmail.com', '2013-06-14', 4354646, 4456, 'fsfdgdfg'),
+('ffhgj', 'reyna44@gmail.com', '2024-06-04', 3978367, 4457, 'vgfhgjg');
 
 
 ALTER TABLE `admins`
@@ -107,7 +111,7 @@ ALTER TABLE `authors`
 
 
 ALTER TABLE `books`
-  ADD PRIMARY KEY (`book_id`);
+  ADD PRIMARY KEY (`book_isbn`);
 
 
 ALTER TABLE `category`
@@ -122,17 +126,12 @@ ALTER TABLE `users`
   ADD PRIMARY KEY (`id`);
 
 
-
 ALTER TABLE `admins`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 
 ALTER TABLE `authors`
   MODIFY `author_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=107;
-
-
-ALTER TABLE `books`
-  MODIFY `book_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 
 ALTER TABLE `category`
@@ -144,6 +143,6 @@ ALTER TABLE `issued_books`
 
 
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4458;
 COMMIT;
 
