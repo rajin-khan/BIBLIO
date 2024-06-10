@@ -123,19 +123,6 @@ button {
     top: 75vh;
 }
 
-.stockLink {
-
-    position: absolute;
-
-    font-family: 'Roseritta', sans-serif;
-    font-size: 220%;
-    color: black;
-    text-decoration: underline;
-
-    left: 7.5vw;
-    bottom: 9.5vh;
-}
-
 #bookName {
 
     position:absolute;
