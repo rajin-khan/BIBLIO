@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Update Books</title>
     <link rel="normalize" href="css/normalize.css">
-    <link rel="stylesheet" href="css/adminRequest.css">
+    <link rel="stylesheet" href="css/updateBooks.css">
     <link href="https://fonts.cdnfonts.com/css/roseritta" rel="stylesheet">
 </head>
 <body>
@@ -57,9 +57,20 @@
 
     </script>
 
-    <div class="requestSpace">
+    <form action="" method=""></form>
 
-    </div>
+        <input type="number" id="ISBN" placeholder="Enter ISBN Number (WHEN DELETING, ONLY ENTER HERE)">
+        <input type="text" id="authorName" placeholder="Enter Author Name">
+        <input type="number" id="copies" placeholder="Enter Updated Copies">
+        <input type="number" id="price" placeholder="Enter Updated Price">
+
+        <input type="submit" id="updateButton" value="UPDATE BOOK">
+        
+    </form>
+
+    <a href="">
+        <button class="deleteButton">DELETE BOOK</button>
+    </a>
 
 
 </body>

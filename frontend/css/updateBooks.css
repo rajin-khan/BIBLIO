@@ -32,7 +32,7 @@ body {
     position: absolute;
 
     left: 7vw;
-    top: 15vh;
+    top: 19vh;
     
 }
 
@@ -123,24 +123,6 @@ button {
     top: 75vh;
 }
 
-.requestSpace {
-
-    position: absolute;
-
-    background-color: white;
-
-    border: 2px solid black;
-
-    width: auto;
-    height: auto;
-
-    left: 15vw;
-    right: 15vw;
-    top: 32vh;
-    bottom: 22vh;
-
-}
-
 .stockLink {
 
     position: absolute;
@@ -152,4 +134,104 @@ button {
 
     left: 7.5vw;
     bottom: 9.5vh;
+}
+
+#ISBN {
+
+    position:absolute;
+
+    right: 30vw;
+    left: 30vw;
+    top: 35vh;
+
+    width: auto;
+    height: 55px;
+    border-radius: 27.5px;
+
+    text-align: center;
+}
+
+#authorName {
+
+    position:absolute;
+
+    right: 30vw;
+    left: 30vw;
+    top: 46vh;
+
+    width: auto;
+    height: 55px;
+    border-radius: 27.5px;
+
+    text-align: center;
+}
+
+#copies {
+
+    position:absolute;
+
+    right: 30vw;
+    left: 30vw;
+    top: 57vh;
+
+    width: auto;
+    height: 55px;
+    border-radius: 27.5px;
+
+    text-align: center;
+}
+
+#price {
+
+    position:absolute;
+
+    right: 30vw;
+    left: 30vw;
+    top: 67.5vh;
+
+    width: auto;
+    height: 55px;
+    border-radius: 27.5px;
+
+    text-align: center;
+}
+
+#updateButton {
+
+    position: absolute;
+
+    font-family: 'Roseritta', sans-serif;
+    color: black;
+    font-size: 150%;
+
+    background-color: white;
+    border: solid 1px black;
+    border-radius: 25px;
+
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+
+    right: 44vw;
+    bottom: 29.7vh;
+}
+
+.deleteButton {
+
+    position: absolute;
+
+    font-family: 'Roseritta', sans-serif;
+    color: white;
+    font-size: 150%;
+
+    background-color: red;
+    border: solid 1px black;
+    border-radius: 25px;
+
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+
+    right: 44.4vw;
+    bottom: 22vh;
 }
