@@ -134,169 +134,75 @@
             top: 75vh;
         }
         
-        #bookName {
-        
-            position:absolute;
-        
-            right: 30vw;
-            left: 30vw;
-            top: 28vh;
-        
-            width: auto;
-            height: 55px;
-            border-radius: 27.5px;
-        
-            text-align: center;
-        }
-        
-        #ISBN {
-        
-            position:absolute;
-        
-            right: 30vw;
-            left: 30vw;
-            top: 38vh;
-        
-            width: auto;
-            height: 55px;
-            border-radius: 27.5px;
-        
-            text-align: center;
-        }
-        
-        #updateName {
-        
-            position:absolute;
-        
-            font-family: 'Roseritta', sans-serif;
-            color: black;
-            font-size: 130%;
-        
-            background-color: white;
-            border: solid 1px black;
-            border-radius: 25px;
-        
+        .morebutton {
+
+            border-radius: 50px;
+            z-index: 99;
+
+            width: 20vw;
+            height: 12vh;
+            border-radius: 40vw;
+
             padding-left: 30px;
             padding-right: 30px;
-            padding-top: 10px;
-        
-            right: 40vw;
-            left: 40vw;
-            top: 48vh;
-        
-            width: auto;
-            height: 55px;
-            border-radius: 27.5px;
-        
-            text-align: center;
+            padding-top: 18px;
         }
+
+        .nameButton {
         
-        #updateAuthor {
-        
-            position:absolute;
-        
-            font-family: 'Roseritta', sans-serif;
-            color: black;
-            font-size: 130%;
-        
-            background-color: white;
-            border: solid 1px black;
-            border-radius: 25px;
-        
-            padding-left: 30px;
-            padding-right: 30px;
-            padding-top: 10px;
-        
-            right: 40vw;
-            left: 40vw;
-            top: 57vh;
-        
-            width: auto;
-            height: 55px;
-            border-radius: 27.5px;
-        
-            text-align: center;
-        }
-        
-        #updateCopies {
-        
-            position:absolute;
-        
-            font-family: 'Roseritta', sans-serif;
-            color: black;
-            font-size: 130%;
-        
-            background-color: white;
-            border: solid 1px black;
-            border-radius: 25px;
-        
-            padding-left: 30px;
-            padding-right: 30px;
-            padding-top: 10px;
-        
-            right: 40vw;
-            left: 40vw;
-            top: 66vh;
-        
-            width: auto;
-            height: 55px;
-            border-radius: 27.5px;
-        
-            text-align: center;
-        }
-        
-        #updateRent{
-        
-            position:absolute;
-        
-            font-family: 'Roseritta', sans-serif;
-            color: black;
-            font-size: 130%;
-        
-            background-color: white;
-            border: solid 1px black;
-            border-radius: 25px;
-        
-            padding-left: 30px;
-            padding-right: 30px;
-            padding-top: 10px;
-        
-            right: 40vw;
-            left: 40vw;
-            top: 75vh;
-        
-            width: auto;
-            height: 55px;
-            border-radius: 27.5px;
-        
-            text-align: center;
-        }
-        
-        #deleteButton {
-        
-            position:absolute;
+            position: absolute;
         
             font-family: 'Roseritta', sans-serif;
             color: white;
-            font-size: 130%;
+            font-size: 150%;
         
-            background-color: red;
-            border: solid 1px black;
-            border-radius: 25px;
+            background-color: black;
+            border: solid 1px white;
         
             padding-left: 30px;
             padding-right: 30px;
             padding-top: 10px;
         
-            right: 40vw;
-            left: 40vw;
-            top: 84vh;
+            left: 22vw;
+            bottom: 57vh;
+        }
+
+        .copyButton {
         
-            width: auto;
-            height: 55px;
-            border-radius: 27.5px;
+            position: absolute;
         
-            text-align: center;
+            font-family: 'Roseritta', sans-serif;
+            color: white;
+            font-size: 150%;
+        
+            background-color: black;
+            border: solid 1px white;
+        
+            padding-left: 30px;
+            padding-right: 30px;
+            padding-top: 10px;
+        
+            right: 22vw;
+            bottom: 57vh;
+        }
+
+        .priceButton {
+        
+            position: absolute;
+        
+            font-family: 'Roseritta', sans-serif;
+            color: white;
+            font-size: 150%;
+        
+            background-color: black;
+            border: solid 1px white;
+        
+            padding-left: 30px;
+            padding-right: 30px;
+            padding-top: 10px;
+        
+            left: 22vw;
+            bottom: 26vh;
         }
         
         .deleteButton {
@@ -309,14 +215,13 @@
         
             background-color: red;
             border: solid 1px black;
-            border-radius: 25px;
         
             padding-left: 30px;
             padding-right: 30px;
             padding-top: 10px;
         
-            right: 44.4vw;
-            bottom: 22vh;
+            right: 22vw;
+            bottom: 26vh;
         }
 
     </style>
@@ -371,18 +276,21 @@
 
     </script>
 
-    <form action="" method="">
+    <a href="/BIBLIO/frontend/updateName.html">
+        <button class="nameButton morebutton">UPDATE NAME</button>
+    </a>
 
-        <input type="text" id="bookName" placeholder="Enter Book Name">
-        <input type="number" id="ISBN" placeholder="Enter ISBN Number">
+    <a href="/BIBLIO/frontend/updateCopies.html">
+        <button class="copyButton morebutton">UPDATE COPIES</button>
+    </a>
 
-        <input type="submit" formaction="" id="updateName" value="UPDATE BOOK NAME">
-        <input type="submit" formaction="" id="updateAuthor" value="UPDATE BOOK AUTHOR">
-        <input type="submit" formaction="" id="updateCopies" value="INCREASE/DECREASE COPIES">
-        <input type="submit" formaction="" id="updateRent" value="CHANGE RENT PRICE">
-        <input type="submit" id="deleteButton" value="DELETE BOOK">    
+    <a href="/BIBLIO/frontend/updatePrice.html">
+        <button class="priceButton morebutton">UPDATE PRICE</button>
+    </a>
 
-    </form>
+    <a href="/BIBLIO/frontend/deleteBooks.html">
+        <button class="deleteButton morebutton">DELETE BOOK</button>
+    </a>
 
 </body>
 </html>
