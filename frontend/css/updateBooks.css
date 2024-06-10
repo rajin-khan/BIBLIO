@@ -136,13 +136,28 @@ button {
     bottom: 9.5vh;
 }
 
+#bookName {
+
+    position:absolute;
+
+    right: 30vw;
+    left: 30vw;
+    top: 28vh;
+
+    width: auto;
+    height: 55px;
+    border-radius: 27.5px;
+
+    text-align: center;
+}
+
 #ISBN {
 
     position:absolute;
 
     right: 30vw;
     left: 30vw;
-    top: 35vh;
+    top: 38vh;
 
     width: auto;
     height: 55px;
@@ -151,58 +166,13 @@ button {
     text-align: center;
 }
 
-#authorName {
+#updateName {
 
     position:absolute;
-
-    right: 30vw;
-    left: 30vw;
-    top: 46vh;
-
-    width: auto;
-    height: 55px;
-    border-radius: 27.5px;
-
-    text-align: center;
-}
-
-#copies {
-
-    position:absolute;
-
-    right: 30vw;
-    left: 30vw;
-    top: 57vh;
-
-    width: auto;
-    height: 55px;
-    border-radius: 27.5px;
-
-    text-align: center;
-}
-
-#price {
-
-    position:absolute;
-
-    right: 30vw;
-    left: 30vw;
-    top: 67.5vh;
-
-    width: auto;
-    height: 55px;
-    border-radius: 27.5px;
-
-    text-align: center;
-}
-
-#updateButton {
-
-    position: absolute;
 
     font-family: 'Roseritta', sans-serif;
     color: black;
-    font-size: 150%;
+    font-size: 130%;
 
     background-color: white;
     border: solid 1px black;
@@ -212,8 +182,123 @@ button {
     padding-right: 30px;
     padding-top: 10px;
 
-    right: 44vw;
-    bottom: 29.7vh;
+    right: 40vw;
+    left: 40vw;
+    top: 48vh;
+
+    width: auto;
+    height: 55px;
+    border-radius: 27.5px;
+
+    text-align: center;
+}
+
+#updateAuthor {
+
+    position:absolute;
+
+    font-family: 'Roseritta', sans-serif;
+    color: black;
+    font-size: 130%;
+
+    background-color: white;
+    border: solid 1px black;
+    border-radius: 25px;
+
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+
+    right: 40vw;
+    left: 40vw;
+    top: 57vh;
+
+    width: auto;
+    height: 55px;
+    border-radius: 27.5px;
+
+    text-align: center;
+}
+
+#updateCopies {
+
+    position:absolute;
+
+    font-family: 'Roseritta', sans-serif;
+    color: black;
+    font-size: 130%;
+
+    background-color: white;
+    border: solid 1px black;
+    border-radius: 25px;
+
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+
+    right: 40vw;
+    left: 40vw;
+    top: 66vh;
+
+    width: auto;
+    height: 55px;
+    border-radius: 27.5px;
+
+    text-align: center;
+}
+
+#updateRent{
+
+    position:absolute;
+
+    font-family: 'Roseritta', sans-serif;
+    color: black;
+    font-size: 130%;
+
+    background-color: white;
+    border: solid 1px black;
+    border-radius: 25px;
+
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+
+    right: 40vw;
+    left: 40vw;
+    top: 75vh;
+
+    width: auto;
+    height: 55px;
+    border-radius: 27.5px;
+
+    text-align: center;
+}
+
+#deleteButton {
+
+    position:absolute;
+
+    font-family: 'Roseritta', sans-serif;
+    color: white;
+    font-size: 130%;
+
+    background-color: red;
+    border: solid 1px black;
+    border-radius: 25px;
+
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+
+    right: 40vw;
+    left: 40vw;
+    top: 84vh;
+
+    width: auto;
+    height: 55px;
+    border-radius: 27.5px;
+
+    text-align: center;
 }
 
 .deleteButton {
