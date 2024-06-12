@@ -23,11 +23,9 @@ BIBLIO is a Library Management System designed to facilitate the management of b
 - HTML
 - CSS
 - JavaScript
-- React Framework
 
 ### Back-End
-- Node.js
-- Express Framework
+- PHP
 
 ### Database
 - MySQL
